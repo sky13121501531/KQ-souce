@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// 文件名：OS_Environment.h
+// 创建者：gaoxd
+// 创建时间：2009-09-15
+// 内容描述：运行环境监测
+///////////////////////////////////////////////////////////////////////////////////////////
+#pragma once
+
+class OS_Environment
+{
+private:
+	OS_Environment();
+	virtual ~OS_Environment();
+public:
+	static long MemoryRealtimeUsage();	//检测内存使用率
+	static long CPURealtimeUsage();		//检测CPU使用率
+	
+};
